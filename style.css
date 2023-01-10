@@ -18,6 +18,7 @@ li {
 body {
   background: var(--color-light);
   color: var(--color-dark);
+  overflow: hidden;
 }
 
 .container {
