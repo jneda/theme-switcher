@@ -8,6 +8,8 @@
   <title>Sélecteur de thème</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <script src="background-image-selector.js" defer></script>
 </head>
 
 <body>
@@ -17,21 +19,27 @@
     </header>
 
     <main>
+      <div class="background-image"></div>
+
       <menu>
-        <li>🎨</li>
+        <li id="background-image-button">📃</li>
+        <li id="font-color-button">🎨</li>
+        <li id="font-family-button">✒️</li>
       </menu>
 
-      <article class="quote">
-        <figure>
-          <blockquote cite="https://fr.wikipedia.org/wiki/Giordano_Bruno">
-            <p>Il faut chaud ici, vous ne trouvez pas ?&nbsp;🥵</p>
-          </blockquote>
-          <figcaption>
-            <p><a href="https://fr.wikipedia.org/wiki/Giordano_Bruno"
-                target="_blank">Giordano Bruno</a></p>
-          </figcaption>
-        </figure>
-      </article>
+      <figure class="quote">
+        <blockquote cite="https://fr.wikipedia.org/wiki/Giordano_Bruno">
+          <p>Il faut chaud ici, vous ne trouvez pas ?&nbsp;🥵</p>
+        </blockquote>
+        <figcaption>
+          <p><a href="https://fr.wikipedia.org/wiki/Giordano_Bruno"
+              target="_blank">Giordano Bruno</a></p>
+        </figcaption>
+      </figure>
+
+      <aside class="image-drawer hidden">
+
+      </aside>
     </main>
 
     <footer>
