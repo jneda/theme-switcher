@@ -140,16 +140,20 @@ menu li:active {
   border-color: var(--color-primary);
 }
 
-/* image drawer */
+/* creation tools */
 
-.image-drawer {
+.position-absolute {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 2;
+}
 
+/* image drawer */
+
+.image-drawer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -158,12 +162,24 @@ menu li:active {
   background: var(--color-secondary);
 }
 
-.image-drawer.hidden {
-  display: none;
-}
-
 .image-drawer img {
   width: 45%;
   object-fit: contain;
   cursor: pointer;
+}
+
+/* color picker */
+
+#color-picker {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* hide tools when not needed */
+
+.hidden {
+  display: none;
 }

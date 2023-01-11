@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="background-image-selector.js" defer></script>
+  <script src="font-color-selector.js" defer></script>
 </head>
 
 <body>
@@ -37,8 +38,10 @@
         </figcaption>
       </figure>
 
-      <aside class="image-drawer hidden">
-
+      <aside class="image-drawer position-absolute hidden"></aside>
+      <aside class="color-picker-drawer position-absolute hidden">
+        <label for="color-picker"></label>
+        <input type="color" name="color-picker" id="color-picker" value="#111111">
       </aside>
     </main>
 
