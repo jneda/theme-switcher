@@ -7,10 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sélecteur de thème</title>
 
+  <!-- fonts preloading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nixie+One&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
   <script src="background-image-selector.js" defer></script>
   <script src="font-color-selector.js" defer></script>
+  <script src="font-family-selector.js" defer></script>
 </head>
 
 <body>
@@ -41,8 +49,10 @@
       <aside class="image-drawer position-absolute hidden"></aside>
       <aside class="color-picker-drawer position-absolute hidden">
         <label for="color-picker"></label>
-        <input type="color" name="color-picker" id="color-picker" value="#111111">
+        <input type="color" name="color-picker" id="color-picker"
+          value="#111111">
       </aside>
+      <aside class="font-family-drawer position-absolute hidden"></aside>
     </main>
 
     <footer>
