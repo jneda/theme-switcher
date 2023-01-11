@@ -5,6 +5,9 @@ const fontFamilies = [
   'Merriweather'
 ];
 
+const fontFamilyDrawer = document.querySelector('.font-family-drawer');
+const fontFamilySelectorButton = document.querySelector('#font-family-button');
+
 function selectFontFamily() {
   toggleFontFamilySelector();
   fontFamilies.forEach(fontFamily => showCaseFont(fontFamily));
@@ -34,7 +37,5 @@ function updateQuoteFont(event) {
   toggleFontFamilySelector();
 }
 
-const fontFamilyDrawer = document.querySelector('.font-family-drawer');
 
-const fontFamilySelectorButton = document.querySelector('#font-family-button');
 fontFamilySelectorButton.addEventListener('click', selectFontFamily);

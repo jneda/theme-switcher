@@ -23,8 +23,9 @@ function toggleImageDrawer() {
 }
 
 const backgroundDivElement = document.querySelector('.background-image');
-const backgroundSelectButton = document.querySelector('#background-image-button');
 const imageDrawer = document.querySelector('.image-drawer');
+
+const backgroundSelectButton = document.querySelector('#background-image-button');
 
 const imagePaths = [
   'images/leiada-krozjhen-cvEoMQ0OO9Q-unsplash.jpg',
